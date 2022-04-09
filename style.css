@@ -1,0 +1,103 @@
+@import url(https://fonts.google.com/specimen/Overpass);
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400, 700;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+}
+
+.card {
+  margin: 10px;
+  max-width: 1440px;
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+  padding: 1.5rem;
+  background-color: var(--dark-blue);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: var(--very-dark-blue);
+  width: 30px;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  align-self: flex-start;
+  padding: 0;
+}
+
+.text {
+  line-height: 150%;
+  color: var(--light-grey);
+}
+
+.rating {
+  display: flex;
+  gap: 10px;
+  color: var(--light-grey);
+}
+
+.rating p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  width: 30px;
+  padding: 10px;
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+}
+
+.btn {
+  background-color: var(--orange);
+  width: 100%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: var(--white);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.hidden-container {
+  opacity: 0;
+}
