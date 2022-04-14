@@ -70,10 +70,12 @@ body {
   font-family: inherit;
   display: flex;
   gap: 1.5rem;
-  color: var(--white);
+  padding: 20px 0 10px 0;
 }
 
-.rating p {
+.rating button {
+  color: var(--white);
+  border: none;
   font-size: 1rem;
   display: flex;
   justify-content: center;
@@ -86,11 +88,11 @@ body {
   cursor: pointer;
 }
 
-.rating p:hover {
+.rating button:hover {
   background-color: var(--orange);
 }
-.rating p .active {
-  background-color: var(--white);
+button.active {
+  background-color: var(--light-grey);
 }
 
 .btn {
@@ -111,6 +113,7 @@ body {
   color: var(--orange);
   background-color: var(--white);
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -118,6 +121,38 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.ty-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ty-card .title {
+  align-self: center;
+  padding: 0;
+}
+
+.ty-card .rating {
+  margin: 0;
+  margin-top: 1rem;
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: hsl(212, 16%, 21%);
+
+  color: var(--orange);
+}
+
+.ty-card .text {
+  padding: 0;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* .hidden {
+  opacity: 0;
+} */
 
 .hidden-container {
   opacity: 0;
